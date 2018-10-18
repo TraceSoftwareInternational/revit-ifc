@@ -164,7 +164,7 @@
       <!-- Wix doesn't allow the same file to be installed twice.  As such, we must copy the .addin into the RevitLT addins directory.
       Note that it copies the installed file, before the file modification from util:XmlFile, so that must be duplicated. -->
       <ComponentGroup Id="AddinComponentsLT" Directory="DIR_Addins_LT">
-         <Component Id = "COMP_IFC_ExternalUI_Addin_manifest_LT" Guid="5BA55F42-2545-4056-8050-B73FA6E6E522">
+         <Component Id = "COMP_IFC_ExternalUI_Addin_manifest_LT" Guid="5BA55F42-2545-4056-8050-B73FA6E6E522" KeyPath="yes">
             <CopyFile Id="CopyAddin" FileId ="FILE_UI_manifest" DestinationProperty="DIR_Addins_LT" />
             <util:XmlFile Id="SetKeyUI_LT"
                Action="setValue"
